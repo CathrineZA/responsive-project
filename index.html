@@ -15,50 +15,74 @@
         font-family: "poppins", sans-serif;
         background: #272044;
       }
-      h1 {
-        font-family: "Poppins", sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 50px;
-        line-height: 144px;
+
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
       }
 
-      main {
-        background-color: white;
+      .text-center {
+        text-align: center;
       }
 
-      main h2 {
+      .grid {
+        display: grid;
+        grid-gap: 64px;
+      }
+
+      .img-responsive {
+        max-width: 100%;
+        display: block;
+      }
+
+      .grid-2-columns {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .grid-3-columns {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .grid-3-columns-with-first-narrow {
+        grid-template-columns: 1fr 2fr 2fr;
+      }
+
+      .card {
+        background: white;
+        margin: 30px 0;
+      }
+
+      .card-body {
+        padding: 30px;
+      }
+
+      .card-footer {
+        padding: 0 30px 30px;
+      }
+
+      .btn {
+        display: block;
+        color: white;
         font-weight: 700;
-        font-size: 16px;
-        line-height: 1.5px;
-        letter-spacing: 5px;
-        color: #272044;
-        opacity: 0.3;
-        margin: 0;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 3px;
+        text-decoration: none;
         text-transform: uppercase;
-      }
-
-      main h3 {
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 1.5px;
-        color: #272044;
-        margin: 0;
-      }
-
-      main p {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5px;
-        color: #272044;
-        opacity: 0.7;
+        padding: 16px;
+        background-color: #462cb3;
+        text-decoration: none;
       }
 
       section {
-        max-width: 1200px;
+        max-width: 100%;
         margin: 0 auto;
-        padding: 100px 0;
+        padding: 100px;
+      }
+
+      section.secondary {
+        background: #f8f8f8;
       }
 
       header {
@@ -72,11 +96,6 @@
         color: white;
         text-align: center;
         padding: 200px 0;
-      }
-
-      .container {
-        max-width: 1400px;
-        margin: 0 auto;
       }
 
       header h1 {
@@ -116,17 +135,52 @@
         display: inline-block;
       }
 
-      .grid {
-        display: grid;
-        grid-gap: 64px;
+      main {
+        background-color: white;
       }
 
-      .grid-2-columns {
-        grid-template-columns: 1fr 1fr;
+      main h2 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5px;
+        letter-spacing: 5px;
+        color: #272044;
+        opacity: 0.3;
+        margin: 0;
+        text-transform: uppercase;
       }
 
-      .grid-3-columns-with-first-narrow {
-        grid-template-columns: 1fr 2fr 2fr;
+      main h3 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.5px;
+        color: #272044;
+        margin: 0;
+      }
+
+      main h4 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1;
+        color: #272044;
+        margin: 0;
+      }
+
+      main h5 {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 1;
+        color: #272044;
+        margin: 0;
+      }
+
+      main p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5px;
+        color: #272044;
+        opacity: 0.7;
       }
 
       footer {
@@ -166,10 +220,6 @@
       footer a {
         color: white;
         opacity: 0.7;
-      }
-
-      .img-responsive {
-        max-width: 100%;
       }
 
       @media (max-width: 960px) {
@@ -231,6 +281,52 @@
               Jacob Marais, a South African prospector, recovered alluvial gold
               from the Jukskei River, north of what would become Johannesburg.
             </p>
+          </div>
+        </section>
+        <section class="secondary">
+          <h2 class="text-center">CAFES</h2>
+          <h3 class="text-center">My favorite restuarants in Johannesburg</h3>
+
+          <div class="grid grid-3-columns">
+            <div class="card">
+              <div class="card-header">
+                <img
+                  src="images/casabella-mallofafrica.jpg"
+                  alt="casa-blanca"
+                  class="img-responsive"
+                  width="200"
+                />
+              </div>
+
+              <div class="card-body">
+                <h4>casa-bella</h4>
+                <p>
+                  'First we eat, then we do everything else'. No gathering or
+                  visit in Italy can take place in the absence of a delectably
+                  gratifying meal, creatively crafted from the best ingredients
+                  the many local markets have to offer. So, too, it is in our
+                  beautiful home, Casa Bella. We invite you to relax in the
+                  intimate ambience of our wood-fired oven and Italian-inspired
+                  pizzeria, with our sublime selection of authentic Italian
+                  cuisine.
+                </p>
+                <h5>Address:</h5>
+                <p>Shop 2059, Mall of Africa, Magwa Cres, Midrand, 1682</p>
+                <h5>What I like about it</h5>
+                <p>
+                  Casa Bella, meaning “Beautiful Home” in Italian, is a place
+                  where everyone is always welcome. It is a home that runs on
+                  love, laughter, delicious food
+                </p>
+
+                <a
+                  href="https://maps.app.goo.gl/w1mokb4QR9Ct75u38"
+                  class="btn"
+                  target="_blank"
+                  >Learn more</a
+                >
+              </div>
+            </div>
           </div>
         </section>
       </main>
