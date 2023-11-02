@@ -23,9 +23,42 @@
         line-height: 144px;
       }
 
+      main {
+        background-color: white;
+      }
+
+      main h2 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5px;
+        letter-spacing: 5px;
+        color: #272044;
+        opacity: 0.3;
+        margin: 0;
+        text-transform: uppercase;
+      }
+
+      main h3 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.5px;
+        color: #272044;
+        margin: 0;
+      }
+
+      main p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5px;
+        color: #272044;
+        opacity: 0.7;
+      }
+
       section {
         max-width: 1200px;
         margin: 0 auto;
+        padding: 100px 0;
       }
 
       header {
@@ -50,12 +83,11 @@
         font-weight: 700;
         font-size: 96px;
         line-height: 1;
-
         margin: 30px 0;
       }
 
       header h2 {
-        font-weight: 700;
+        font-weight: 400;
         font-size: 40px;
         line-height: 1.5;
         margin: 0;
@@ -75,6 +107,7 @@
         line-height: 1.5;
         text-align: center;
         letter-spacing: 3px;
+        text-decoration: none;
         text-transform: uppercase;
         background: white;
         color: #272044;
@@ -85,8 +118,15 @@
 
       .grid {
         display: grid;
-        grid-template-columns: 1fr 2fr 2fr;
         grid-gap: 64px;
+      }
+
+      .grid-2-columns {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .grid-3-columns-with-first-narrow {
+        grid-template-columns: 1fr 2fr 2fr;
       }
 
       footer {
@@ -98,7 +138,6 @@
           url(images/jhbhouseflats.webp);
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 100px 0;
       }
 
       footer h3 {
@@ -129,6 +168,10 @@
         opacity: 0.7;
       }
 
+      .img-responsive {
+        max-width: 100%;
+      }
+
       @media (max-width: 960px) {
         header {
           padding: 60px 0;
@@ -145,6 +188,15 @@
         header h3 {
           font-size: 12px;
         }
+
+        .grid {
+          grid-template-columns: 1fr;
+          grid-gap: 32px;
+        }
+
+        section {
+          padding: 30px;
+        }
       }
     </style>
   </head>
@@ -156,9 +208,34 @@
         <h2>Capital city of Gauteng</h2>
         <a href="#">Learn more</a>
       </header>
-
+      <main>
+        <section class="grid grid-2-columns">
+          <div>
+            <img
+              src="images/jhbbuilding2.jpg"
+              alt="jhb building"
+              class="img-responsive"
+            />
+          </div>
+          <div>
+            <h2>Why Johanneburg?</h2>
+            <h3>Johannesburg, the city of gold</h3>
+            <p>
+              Johannesburg is also known by its Zulu name, eGoli, meaning “city
+              of gold,” because it was founded after gold was discovered on the
+              site in 1886. The city once provided more than 40 percent of the
+              world's annual gold production
+            </p>
+            <p>
+              Johannesburg's early history is the story of gold. In 1853 Pieter
+              Jacob Marais, a South African prospector, recovered alluvial gold
+              from the Jukskei River, north of what would become Johannesburg.
+            </p>
+          </div>
+        </section>
+      </main>
       <footer>
-        <section class="grid">
+        <section class="grid grid-3-columns-with-first-narrow">
           <div>
             <h3>More about Johannesburg</h3>
 
@@ -185,23 +262,27 @@
           <div>
             <h3>About me</h3>
             <p>
-              kjdhuikhndkbjhbjh djki;h;ikh kjhjhchb hjbguyg jhbjguyguyj
-              jhbjguygu jhbjgyug jhbjgyg jhbjgyug jbujgug
+              My name is Cathy Sekhuto and I love to travel. I have travelled
+              all over the world but theres only one city which I loved the most
+              and I would'nt mind going there again and again. That city is
+              Johannesburg, the city of gold.
             </p>
           </div>
           <div>
             <h3>About this website</h3>
             <p>
-              jhjlsuh;jbhjbl khjbcjkn kjhbahxlhcv khuciuahkjn ckj khdcuikhuckjn
-              akjcuahcuyhcu jahbhcbhc
+              I have created this website for people who have'nt visited
+              Johannesburg yet. I want you to see what you can expect the next
+              time you visit this city of gold.
             </p>
+            <br />
+            This project was coded with ❤ by<a
+              href="https://github.com/CathrineZA/responsive-project.git"
+              target="_blank"
+            >
+              Cathy
+            </a>
           </div>
-          This project was coded with ❤ by
-          <a
-            href="https://github.com/CathrineZA/responsive-project.git"
-            target="_blank"
-            >Cathy</a
-          >
         </section>
       </footer>
     </div>
