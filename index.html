@@ -23,6 +23,11 @@
         line-height: 144px;
       }
 
+      section {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
       header {
         background-image: linear-gradient(
             rgba(0, 0, 0, 0.6),
@@ -78,7 +83,48 @@
         display: inline-block;
       }
 
-      @media (max-width: 900px) {
+      footer {
+        color: white;
+        background-image: linear-gradient(
+            rgba(39, 32, 68, 0.8),
+            rgba(39, 32, 68, 0.9)
+          ),
+          url(images/jhbhouseflats.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0;
+      }
+
+      footer h3 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      footer p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        opacity: 0.7;
+        margin-right: 20px;
+      }
+
+      footer ul {
+        padding: 0;
+      }
+
+      footer li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      footer a {
+        color: white;
+        opacity: 0.7;
+      }
+
+      @media (max-width: 960px) {
         header {
           padding: 60px 0;
         }
@@ -95,6 +141,11 @@
           font-size: 12px;
         }
       }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+      }
     </style>
   </head>
   <body>
@@ -107,12 +158,51 @@
       </header>
 
       <footer>
-        This project was coded with ❤ by
-        <a
-          href="https://github.com/CathrineZA/responsive-project.git"
-          target="_blank"
-          >Cathy</a
-        >
+        <section class="grid">
+          <div>
+            <h3>More about Johannesburg</h3>
+
+            <ul>
+              <li>
+                <a href="https://ortambo-airport.com/index.html" target="_blank"
+                  >Johannesburg airport website</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/eBYrpBFeQhxcgB6y6"
+                  target="_blank"
+                  >Map of Johannesburg</a
+                >
+              </li>
+              <li>
+                <a href="https://mbus.joburg.org.za/" target="_blank"
+                  >Transport</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>About me</h3>
+            <p>
+              kjdhuikhndkbjhbjh djki;h;ikh kjhjhchb hjbguyg jhbjguyguyj
+              jhbjguygu jhbjgyug jhbjgyg jhbjgyug jbujgug
+            </p>
+          </div>
+          <div>
+            <h3>About this website</h3>
+            <p>
+              jhjlsuh;jbhjbl khjbcjkn kjhbahxlhcv khuciuahkjn ckj khdcuikhuckjn
+              akjcuahcuyhcu jahbhcbhc
+            </p>
+          </div>
+          This project was coded with ❤ by
+          <a
+            href="https://github.com/CathrineZA/responsive-project.git"
+            target="_blank"
+            >Cathy</a
+          >
+        </section>
       </footer>
     </div>
   </body>
