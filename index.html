@@ -11,6 +11,10 @@
     />
     <title>Responsive website - Cathrine Sekhuto</title>
     <style>
+      body {
+        font-family: "poppins", sans-serif;
+        background: #272044;
+      }
       h1 {
         font-family: "Poppins", sans-serif;
         font-style: normal;
@@ -18,18 +22,98 @@
         font-size: 50px;
         line-height: 144px;
       }
+
+      header {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.8)
+          ),
+          url(images/jhbbuilding.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        text-align: center;
+        padding: 200px 0;
+      }
+
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      header h1 {
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 1;
+
+        margin: 30px 0;
+      }
+
+      header h2 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.5;
+        margin: 0;
+      }
+
+      header h3 {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 1.5;
+        letter-spacing: 5px;
+        margin: 0;
+      }
+
+      header a {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        background: white;
+        color: #272044;
+        padding: 16px 32px;
+        margin-top: 32px;
+        display: inline-block;
+      }
+
+      @media (max-width: 900px) {
+        header {
+          padding: 60px 0;
+        }
+
+        header h1 {
+          font-size: 48px;
+        }
+
+        header h2 {
+          font-size: 20px;
+        }
+
+        header h3 {
+          font-size: 12px;
+        }
+      }
     </style>
   </head>
   <body>
-    <h1>Welcome to Johannesburg!</h1>
+    <div class="container">
+      <header>
+        <h3>.TRAVEL.</h3>
+        <h1>Welcome to Johannesburg!</h1>
+        <h2>Capital city of Gauteng</h2>
+        <a href="#">Learn more</a>
+      </header>
 
-    <footer>
-      This project was coded with ❤ by
-      <a
-        href="https://github.com/CathrineZA/responsive-project.git"
-        target="_blank"
-        >Cathy</a
-      >
-    </footer>
+      <footer>
+        This project was coded with ❤ by
+        <a
+          href="https://github.com/CathrineZA/responsive-project.git"
+          target="_blank"
+          >Cathy</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
