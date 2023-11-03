@@ -47,9 +47,18 @@
         grid-template-columns: 1fr 2fr 2fr;
       }
 
+      .embed {
+        width: 100%;
+        aspect-ratio: 1/1;
+      }
+
       .card {
         background: white;
         margin: 30px 0;
+      }
+
+      .card-header.grid {
+        grid-gap: 0;
       }
 
       .card-body {
@@ -247,6 +256,14 @@
         section {
           padding: 30px;
         }
+
+        .card-header img {
+          display: none;
+        }
+
+        .embed {
+          aspect-ratio: 16/9;
+        }
       }
     </style>
   </head>
@@ -289,13 +306,20 @@
 
           <div class="grid grid-3-columns">
             <div class="card">
-              <div class="card-header">
+              <div class="card-header grid grid-2-columns">
                 <img
                   src="images/grillhouse-sandton.jpg"
                   alt="grill-house"
                   class="img-responsive"
-                  width="220"
                 />
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14331.083312508874!2d28.0503997!3d-26.1063986!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9572d548c60e03%3A0xa02b02cd1133833d!2sThe%20Grillhouse%20Sandton!5e0!3m2!1sen!2sza!4v1698993880805!5m2!1sen!2sza"
+                  class="embed"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
 
               <div class="card-body">
@@ -329,13 +353,20 @@
             </div>
 
             <div class="card">
-              <div class="card-header">
+              <div class="card-header grid grid-2-columns">
                 <img
                   src="images/kitchen.jpg"
                   alt="taste kitchen"
                   class="img-responsive"
-                  width="250"
                 />
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14319.08973964245!2d28.06077!3d-26.20408!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950f5ef5634137%3A0x3c2e72e330d2d49b!2sTaste%20kitchen!5e0!3m2!1sen!2sza!4v1698994676779!5m2!1sen!2sza"
+                  class="embed"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
 
               <div class="card-body">
@@ -369,13 +400,20 @@
             </div>
 
             <div class="card">
-              <div class="card-header">
+              <div class="card-header grid grid-2-columns">
                 <img
                   src="images/casabella-mallofafrica.jpg"
                   alt="casa-blanca"
                   class="img-responsive"
-                  width="210"
                 />
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14342.181102020479!2d28.1062941!3d-26.0157092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9572017d115da7%3A0xa9e3dd5534b9cf68!2sCasa%20Bella%20Mall%20of%20Africa!5e0!3m2!1sen!2sza!4v1698994888122!5m2!1sen!2sza"
+                  class="embed"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
 
               <div class="card-body">
